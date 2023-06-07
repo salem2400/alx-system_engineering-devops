@@ -1,1 +1,2 @@
+#!/bin/bash
 redme file
