@@ -1,2 +1,2 @@
 #!/bin/bash
-chuser vincent:staff _hello
+chuser -h vincent:staff _hello
