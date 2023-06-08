@@ -1,2 +1,2 @@
-#!/biv/bash
+#!/bin/bash
 cp -n *.html ..
