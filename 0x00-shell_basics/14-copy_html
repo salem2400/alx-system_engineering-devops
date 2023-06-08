@@ -1,0 +1,2 @@
+#!/biv/bash
+cp -n *.html ..
