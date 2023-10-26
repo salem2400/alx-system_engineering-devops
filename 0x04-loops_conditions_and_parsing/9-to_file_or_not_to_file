@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#if file exist empty
+hfile="holbertonschool"
+if [ -e $hfile ] 
+then
+	echo "holbertonschool file exists"
+	if [ -s $hfile ]
+	then
+		echo "holbertonschool file is not empty"
+	else
+		echo "holbertonschool file is empty"
+	fi
+
+	if [ -f $hfile ]
+	then
+		echo "holbertonschool is a regular file"
+	fi
+else
+	echo "holbertonschool file does not exist"
+fi
