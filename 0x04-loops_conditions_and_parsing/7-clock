@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
-#while while
-h=0
-while [ $h -lt 13 ]
-do
-  echo "Hour:" $h
-	m=1
-	while [ $m -lt 60 ]
-	do
-	 echo $m
-	 ((m++))	
-	done
-  ((h++)) 
-done
+# displays the time for 12 hours and 59 minutes:
 
+# display hours from 0 to 12
+# display minutes from 1 to 59
+
+hour=0
+
+while [ $hour -le 12 ]
+do
+ echo "Hour: $hour"
+ minute=1
+ while [ $minute -le 59 ]
+ do
+  echo "$minute"
+  (( minute++ ))
+ done
+ (( hour++ ))
+done

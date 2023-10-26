@@ -1,15 +1,21 @@
 #!/usr/bin/env bash
-#fizz buzz
-for ((i=1; i<101 ; i++)) 
-do
-	if ((i % 15 == 0)); then
-		echo "FizzBuzz"
-	elif ((i % 3 == 0)); then
-		echo "Fizz"
-	elif ((i % 5 == 0)); then
-		echo "Buzz" 
-  	else
-		echo "$i"
-	fi
-done
+# displays numbers from 1 to 100. displays the number
+# FizzBuzz when the number is a multiple of 3 and 5
+# Fizz when the number is multiple of 3
+# Buzz when the number is a multiple of 5
 
+for num in {1..100}
+do
+ if (( num % 3 == 0 && num % 5 == 0 ))
+ then
+  echo "FizzBuzz"
+ elif (( num % 3 == 0 ))
+ then
+  echo "Fizz"
+ elif (( num % 5 == 0 ))
+ then
+  echo "Buzz"
+ else
+  echo "$num"
+ fi
+done

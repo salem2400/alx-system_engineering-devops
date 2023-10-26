@@ -1,19 +1,22 @@
 #!/usr/bin/env bash
-#while if elif
-i=0
-while [ $i -lt 10 ]
+# Bash script that loops from 1 to 10 and
+
+# 	 "bad luck" for the 4th loop iteration
+#	 "good luck" for the 8th loop iteration
+#	 "Best School" for the other iterations
+
+count=0
+
+while [ $count -lt 10 ]
 do
-  
-	if [ $i -eq 3 ] 
+	if [ $count -eq 3 ]
 	then
 		echo "bad luck"
-	elif [ $i -eq 7 ]
+	elif [ $count -eq 7 ]
 	then
 		echo "good luck"
 	else
-		echo "Holberton School"
+		echo "Best School"
 	fi
-
-  	((i++)) 
+	(( count++ ))
 done
-
