@@ -3,5 +3,3 @@
 # A Bash script that uses ssh to connect to your server using a private key
 
 ssh -i ~/.ssh/school ubuntu@44.200.64.51
-
-echo "Script execution completed"
